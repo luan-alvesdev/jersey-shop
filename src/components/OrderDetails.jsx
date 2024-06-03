@@ -21,7 +21,7 @@ function OrderDetails({ itemsInBag }) {
                         {itemsInBag.map(item =>
                             <tr>
                                 <td>{item.quantity} x {item.name}</td>
-                                <td>$ {item.price * item.quantity}</td>
+                                <td>$ {(item.price * item.quantity).toFixed(2)}</td>
                             </tr>
                         )}
 
